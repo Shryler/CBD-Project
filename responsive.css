@@ -1,0 +1,137 @@
+@media screen and (max-width: 1200px) {
+    /* Section Header */
+    #navscroll {
+        top: -40px;
+        height: 25px;
+        display: flex;
+        width: 100%;
+        background-color: #2c3740ec;
+        position: fixed;
+        transition: 0.7s;
+        z-index: 999;
+        right: 0;
+        border-radius: 0px;
+        overflow: hidden;
+    }
+
+    nav {
+        justify-content: center;
+    }
+    nav ul {
+        display:none;
+    }
+
+    /* Section A propos */
+
+    .about-contain {
+        background: none;
+        padding:0;
+        flex-direction: column;
+        overflow: hidden;
+        margin: 20px;
+    }
+    .about-contain .imgbox {
+        flex:1;
+    }
+    #about .box {
+        margin: 20px;
+        overflow: auto;
+    }
+    #about img {
+        display:initial;
+        max-height: 400px;
+    }
+
+    /* Section Nouveautés */
+
+    /* Section Informations */
+
+    #cbd {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+    #cbd .box {
+        margin: 0px 20px;
+        padding-left: 0;
+    }
+    .img-cbd {
+        height:100%;
+        margin:20px;
+        background: url(/img/responsive/infos.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    /* Section Contact */
+
+    .container_contact {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    /* Section Footer */
+}
+
+@media screen and (max-width: 680px) {
+    /* * Section */
+
+    section h1 {
+        font-size: 2rem;
+        padding-top: 40px;
+        text-align: center;
+    }
+    /* Section Header */
+    #navscroll ul li {
+        font-size: 0.8rem;
+    }
+    #header h1 {
+        font-size: 2rem;
+    }
+    #header p {
+        font-size: 1.3rem;
+        margin:1em;
+    }
+
+    /* Section About */
+
+    .about-contain {
+        margin:0;
+    }
+    .about-contain .imgbox {
+        display: none;
+    }
+
+    /* Section News */
+
+    .sub-container-news {
+        display: none;
+    }
+    /* Section Infos */
+    
+    .img-cbd {
+        display: none;
+    }
+    #cbd {
+        height:auto;
+    }
+    /* Section Contact */
+    .cont_name_mail {
+        flex-direction: column;
+        align-items: center;
+    }
+    form textarea {
+        margin:0;
+        width: fit-content;
+        width: -webkit-fill-available;
+        font-size:1rem;
+    }
+    form input {
+        width: fit-content;
+        font-size:1rem;
+        margin-bottom: 10px;
+    }
+    /* Section Footer */
+    footer {
+        flex-direction: column;
+    }
+}

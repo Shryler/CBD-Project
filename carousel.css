@@ -1,0 +1,85 @@
+a.button {
+    align-items: center;
+    background-color: #2A5948;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0.25rem 0.75rem;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+a.button:hover {
+    background-color: #49A669;
+}
+
+
+ul {
+    margin: 0 0 1.5rem;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+.card-img img {
+    height: 100%;
+    max-width: calc(100% + 2rem);
+    left: -1rem;
+    right: -1rem;
+    position:center;
+}
+.card {
+    margin: 10px;
+    width:250px;
+    overflow: hidden;
+    text-align: center;
+}
+.card-content {
+    height:150px;
+}
+.card-content p {
+    height:100px;
+}
+.card-content::-webkit-scrollbar {
+    scrollbar-width: thin;
+}
+
+.card-img {
+    height:200px;
+    display:flex;
+    justify-content: space-around;
+}
+.carousel-items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    flex: 1 0 250px;
+    margin-left: 1rem;
+    scroll-snap-align: start;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    height: 9px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2A5948;
+    border-radius: 0px;
+}
+.carousel-items::-webkit-scrollbar-thumb {
+    border-radius:10px;
+}

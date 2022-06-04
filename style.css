@@ -1,0 +1,389 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin:0 auto;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background: linear-gradient(#56bf5d36, #2c3740), url(./img/bg.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    height:100vh;
+    scroll-snap-align: start;
+}
+nav {
+    display:flex;
+    height:30vh;
+    padding:30px;
+    justify-content: space-between;
+}
+nav a {
+    font-size: 1.5rem;
+}
+nav ul {
+    display:flex;
+    justify-content: flex-end;
+    flex:2;
+    list-style-type: none;
+}
+nav ul li {
+    margin:0 30px;
+}
+
+nav ul li a:hover {
+    transition:0.7s;
+    color:#56BF5D;
+}
+#header {
+    text-align: center;
+    color:white;
+}
+
+#header h1 {
+    font-size:8rem;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin:0;
+}
+#header p {
+    font-size:2rem;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+span[title*="green"]{
+    color:#56BF5D;
+}
+
+#header h3 {
+    font-size:1.3rem;
+    font-weight: 300;
+    padding-top:120px;
+    padding-bottom:5px;
+}
+
+.reseaux i {
+    margin: 0 10px;
+    cursor:pointer;
+}
+.reseaux i:hover {
+    transition:0.7s;
+    color:#56BF5D;
+}
+
+.scroll {
+    height:100vh;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    height:100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    background-color: white;
+    scroll-snap-align: center;
+}
+
+section h1 {
+    font-size:4rem;
+    padding:20px;
+    margin:0;
+}
+section h1::before {
+    content: "#";
+    color: #2A5948;
+    padding-right: 5px;
+}
+
+.sub-container-news {
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:60px;
+}
+.sub-container-news a {
+    margin:0 5px;
+}
+.sub-container-news a img {
+    max-width: 100%;
+}
+/* ALEX */
+
+#about .box {
+    flex: 1;
+    text-align: center;
+    margin-left: 50%;
+}
+#about img {
+    display:none;
+}
+#cbd .box {
+    flex: 1;
+    margin-right: -150px;
+    text-align: center;
+    position: relative;
+    padding-left: 20px;
+}
+
+.about-contain {
+    display: flex;
+    height: 100%;
+    height:750px;
+    padding-right: 50px;
+    background-size: auto;
+    background-image: url(./img/about.png);
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+#cbd {
+    display:flex;
+    height: 750px;
+    align-items: center;
+}
+.img-cbd {
+    flex:2;
+    height:100%;
+    background-image: url(/img/infos.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+/* FIN */
+
+/* SCROLL BAR */
+#navscroll {
+    top: -40px;
+    height:40px;
+    display: flex;
+    width: 50%;
+    background-color:#2c3740ec;
+    position:fixed;
+    transition:0.7s;
+    z-index: 999;
+    right: 0;
+    border-radius:0px 0px 0px 15px;
+    overflow: hidden;
+}
+#navscroll ul {
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+#navscroll ul li {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    transition: background-color 0.6s;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#navscroll ul li.about:hover {
+    background-color: #2A5948;
+    border-radius:0px 0px 0px 15px;
+}
+
+#navscroll ul li:hover {
+    background-color:#2A5948;
+}
+#navscroll ul li a {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#navscroll img {
+    height:30px;
+    background-image: url(./img/cbd_logo.png);
+    background-repeat: no-repeat;
+}
+
+.return {
+    position:fixed;
+    right:20px;
+    background-color: #2c3740;
+    padding:5px;
+    color:white;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.return:hover {
+    background-color: #2A5948;
+}
+
+/* CSS Zoé Contact + Footer */
+
+.container_contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80%;
+}
+.cont_name_mail {
+    display: flex;
+    justify-content: space-around;
+}
+
+form input{
+    border: none;
+    border-bottom: solid 1px #2c3740 ;
+    width: 200px;
+    line-height: 30px; 
+    font-size:1.2rem;
+}
+
+form input::placeholder {
+    text-align: center;
+    color: rgb(98, 98, 98);
+}
+
+.container_button {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form textarea {
+    border: none;
+    margin: 50px;
+    border-bottom: solid 1px #2c3740;
+    width: 520px;
+    height: 200px;
+    font-size:1.2rem;
+    resize: none;
+}
+
+button[type=submit] {
+    align-items: center;
+    background-color: #2A5948;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 0.25rem 0.75rem;
+}
+
+button[type=submit]:hover {
+    transition:0.7s;
+    background-color: #49A669;
+}
+
+form textarea::placeholder {
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(98, 98, 98);
+}
+
+footer {
+    background-color:#2c3740 ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top :20px;
+    padding-bottom :20px;
+}
+.googleframe {
+    height: 80%;
+    width: 100%;
+    max-width: 700px;
+    margin: 20px;
+}
+.googleframe iframe
+{
+    border-radius: 2%;
+    box-shadow: 0px 0px 2px #2c3740;
+}
+.coord p{
+    color:#56BF5D;
+    padding-top: 20px;
+}
+.coord::first-line
+{
+    
+color: aliceblue;
+}
+.logo_footer p
+{
+    
+    font-size: 0.8rem;
+    color:rgb(160, 160, 160);
+}
+.logo_footer img
+{
+    height: 200px;
+    width: 175px;
+}
+.hexa_portraits
+{
+    margin-top: 20px;
+}
+.hexa_portraits img
+{
+    height: 75px;
+    width: 250px;
+}
+.follow p
+{
+        padding-top: 20px;
+        
+        
+        font-size: 0.8rem;
+        color:rgb(160, 160, 160);
+    
+}
+.follow::first-line
+{
+    
+    color: aliceblue;
+}
+.follow i {
+    padding:5px;
+    color: grey;
+    cursor:pointer;
+}
+.follow i:hover {
+    color: #2A5948;
+}
+.coord p {
+    margin-bottom:15px;
+}
+footer p {
+    margin:0;
+}
+footer {
+    background-color: #2c3740;
+    display: flex;
+    justify-content: space-around;
+    text-align:center;
+    align-items: stretch;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    scroll-snap-align: end;
+}
+.ment_legales p
+{
+    
+    font-size: 0.8rem;
+    color:rgb(160, 160, 160);
+}
+
+footer a {
+    margin:0;
+    color: grey;
+    padding:5px;
+}
+footer a:hover {
+    color:#2A5948;
+}
+.button {
+    text-align: center;
+}
